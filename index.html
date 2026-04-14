@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0a0a">
+
+<title>Thierry Bézier — Digital Artist & Creative Director</title>
+<meta name="description" content="Portfolio of Thierry Bézier, digital artist and creative director working between Paris and Tokyo. AI art, cinematic imagery, brand storytelling.">
+<meta name="author" content="Thierry Bézier">
+<meta name="keywords" content="Thierry Bezier, digital artist, creative director, AI art, portfolio, Paris, Tokyo, brand identity, short film">
+
+<link rel="canonical" href="https://thierrybezier.com/">
+<link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thierrybezier.com/">
+<meta property="og:title" content="Thierry Bézier — Digital Artist & Creative Director">
+<meta property="og:description" content="Portfolio of Thierry Bézier, digital artist working between Paris and Tokyo. AI art, cinematic imagery, brand storytelling.">
+<meta property="og:image" content="https://thierrybezier.com/assets/img/og-cover.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="ja_JP">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@thierrybezier">
+<meta name="twitter:title" content="Thierry Bézier — Digital Artist & Creative Director">
+<meta name="twitter:description" content="Portfolio of Thierry Bézier, digital artist working between Paris and Tokyo.">
+<meta name="twitter:image" content="https://thierrybezier.com/assets/img/og-cover.jpg">
+
+<!-- JSON-LD structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Thierry Bézier",
+  "url": "https://thierrybezier.com",
+  "image": "https://thierrybezier.com/assets/img/portrait.jpg",
+  "jobTitle": "Digital Artist & Creative Director",
+  "email": "thierry@b23.design",
+  "sameAs": [
+    "https://www.instagram.com/thierrybezier/",
+    "https://x.com/thierrybezier",
+    "https://www.linkedin.com/in/bezier/",
+    "https://www.fiverr.com/b23design"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "B23 Design"
+  }
+}
+</script>
+
+<!-- Google Fonts: Geist + Noto Sans JP for Japanese -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WWJTNN1SFE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WWJTNN1SFE');
+</script>
+</head>
+
+<body>
+
+<!-- ═══════ PRELOADER ═══════ -->
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <div class="preloader-logo">TB</div>
+    <div class="preloader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ═══════ HEADER / NAV ═══════ -->
+<header class="site-header" id="header">
+  <a href="#top" class="brand" aria-label="Thierry Bézier — home">
+    <span class="brand-name">THIERRY BÉZIER</span>
+  </a>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#resume" data-i18n="nav.resume">Resume</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#contact" class="btn-pill" data-i18n="nav.contact">Let's Talk</a>
+  </nav>
+
+  <div class="lang-switcher" role="group" aria-label="Language selection">
+    <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+    <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+    <button type="button" data-lang="jp" aria-pressed="false">JP</button>
+  </div>
+
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ═══════ HERO ═══════ -->
+<section id="top" class="hero">
+  <div class="hero-slider" id="heroSlider">
+    <!-- Slides injected by JS -->
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow" data-i18n="hero.eyebrow">Digital Artist & Creative Director</div>
+    <h1 class="hero-title">
+      <span class="title-main">THIERRY</span>
+      <span class="title-main accent">BÉZIER</span>
+    </h1>
+    <p class="hero-subtitle" data-i18n="hero.subtitle">Working between Paris and Tokyo — crafting images at the intersection of art, code and cinema.</p>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary" data-i18n="hero.ctaWork">Explore the work</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.ctaContact">Start a project</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span data-i18n="hero.scroll">SCROLL</span>
+    <svg width="14" height="22" viewBox="0 0 14 22" fill="none"><path d="M7 1v20m0 0l6-6m-6 6l-6-6" stroke="currentColor" stroke-width="1.5"/></svg>
+  </div>
+
+  <div class="hero-dots" id="heroDots" aria-hidden="true"></div>
+</section>
+
+<!-- ═══════ WORK ═══════ -->
+<section id="work" class="section section-work">
+  <div class="container">
+    <header class="section-head">
+      <span class="section-kicker" data-i18n="work.kicker">Selected Works</span>
+      <h2 class="section-title" data-i18n="work.title">Series & Projects</h2>
+      <p class="section-lead" data-i18n="work.lead">A curated selection spanning digital art, commercials, short films and brand collaborations.</p>
+    </header>
+
+    <div class="work-filters" id="workFilters" role="tablist">
+      <button class="filter active" data-filter="all" data-i18n="work.filterAll">All</button>
+      <button class="filter" data-filter="digital-art" data-i18n="work.filterDigital">Digital Art</button>
+      <button class="filter" data-filter="ai-art" data-i18n="work.filterAi">AI Art</button>
+      <button class="filter" data-filter="commercial" data-i18n="work.filterCommercial">Commercial</button>
+      <button class="filter" data-filter="film" data-i18n="work.filterFilm">Film</button>
+      <button class="filter" data-filter="cinematic" data-i18n="work.filterCinematic">Cinematic</button>
+      <button class="filter" data-filter="collection" data-i18n="work.filterCollection">Collection</button>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+      <!-- Cards injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ ABOUT ═══════ -->
+<section id="about" class="section section-about">
+  <div class="container about-grid">
+
+    <div class="about-portrait">
+      <img src="assets/img/portrait.jpg" alt="Thierry Bézier portrait" loading="lazy">
+      <div class="portrait-badge">
+        <span class="jp-text">ティエリー・ベジエ</span>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <span class="section-kicker" data-i18n="about.kicker">About Me</span>
+      <h2 class="section-title">Thierry Bézier</h2>
+
+      <div class="about-stats">
+        <div class="stat"><b>200+</b><span data-i18n="about.statWorks">Works Created</span></div>
+        <div class="stat"><b>15+</b><span data-i18n="about.statYears">Years Experience</span></div>
+        <div class="stat"><b>50+</b><span data-i18n="about.statClients">Happy Clients</span></div>
+      </div>
+
+      <div class="about-bio" data-i18n-html="about.bio">
+        <p>Born and raised in France, Thierry Bézier was immersed in the rich blend of French and Mexican cultures from an early age. At just 20 years old, he embarked on a transformative journey to Japan, a move that would shape the course of his professional life.</p>
+        <p>Upon returning to France a few years later, Thierry entered the dynamic world of advertising, collaborating with renowned agencies to craft compelling campaigns for esteemed brands like <b>L'Oréal, Diesel, Van Cleef & Arpels, Audi</b>, and even venturing into the realm of top-tier media with projects like <b>Game of Thrones, The Walking Dead</b>, Anime brands, and more.</p>
+        <p>Today, while the landscape may have evolved, Thierry's unwavering dedication to innovation remains unchanged. He channels his boundless passion for technological advancement into pioneering a new form of artistic expression — one that seamlessly fuses creativity with cutting-edge technology.</p>
+      </div>
+
+      <div class="about-statement">
+        <h3 data-i18n="about.statementTitle">Artist Statement</h3>
+        <div data-i18n-html="about.statement">
+          <p>My artwork is a celebration of resilience and hope, a testament to the power of creativity to transcend even the most challenging circumstances. Though my generation was promised a utopian future that never came to be, I refuse to let that disappointment define my art.</p>
+          <p>In my artworks, women with bright smiles and confident gazes take center stage, their beauty and strength a reminder that there's still so much to fight for. These figures aren't victims or martyrs; they're warriors, ready to take on whatever challenges come their way.</p>
+          <p>Ultimately, my goal is to create a world where everyone can see themselves reflected in the art that surrounds them, where everyone has access to the same opportunities and resources. That's the true meaning of utopia, and it's what drives me to keep creating, day after day.</p>
+        </div>
+      </div>
+
+      <ul class="about-tags">
+        <li data-i18n="about.tag1">AI Art Pioneer & VIDU Creative Partner</li>
+        <li data-i18n="about.tag2">Featured in International Exhibitions</li>
+        <li data-i18n="about.tag3">Collaborated with Major Brands</li>
+        <li data-i18n="about.tag4">Published Visual Artist</li>
+        <li data-i18n="about.tag5">Guest Speaker & Workshop Host</li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary" data-i18n="about.cta">Start a Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ RESUME ═══════ -->
+<section id="resume" class="section section-resume">
+  <div class="container">
+    <header class="section-head">
+      <span class="section-kicker" data-i18n="resume.kicker">Curriculum</span>
+      <h2 class="section-title" data-i18n="resume.title">Artistic Resume</h2>
+      <p class="section-lead"><span data-i18n="resume.born">Born in Châteauroux (Indre), France — 1980.</span> <span data-i18n="resume.based">Lives and works between Paris and Tokyo.</span></p>
+    </header>
+
+    <div class="resume-grid">
+
+      <div class="resume-block">
+        <h3 data-i18n="resume.education">Education</h3>
+        <div class="resume-item"><span class="year">1998</span><b>École des Métiers Artistiques</b><em>Montpellier, France</em></div>
+        <div class="resume-item"><span class="year">2000</span><b>Canterbury Christ Church University</b><em>Canterbury, UK</em></div>
+      </div>
+
+      <div class="resume-block">
+        <h3 data-i18n="resume.solo">Solo Exhibitions</h3>
+        <div class="resume-item"><span class="year">2023</span><b>"Girlz and Botz"</b><em>Design Festa, Harajuku, Tokyo</em></div>
+        <div class="resume-item"><span class="year">2023</span><b>"Saphina"</b><em>Cipriarte Venezia Gallery, Venice</em></div>
+        <div class="resume-item"><span class="year">2023</span><b>"Sophie"</b><em>Nicoletta Gallery, Berlin</em></div>
+        <div class="resume-item"><span class="year">2023</span><b>"Woman having a cup of coffee"</b><em>Thomson Gallery, Switzerland</em></div>
+      </div>
+
+      <div class="resume-block">
+        <h3 data-i18n="resume.group">Selected Group Exhibitions</h3>
+        <div class="resume-item"><span class="year">2023</span><b>BARBERO & MARGUERI</b><em>XMAS Showcase, France</em></div>
+        <div class="resume-item"><span class="year">2023</span><b>AIMAGINATION</b><em>FF Shanghai, China</em></div>
+        <div class="resume-item"><span class="year">2023</span><b>AIMAGINATION</b><em>Delsey Paris, France</em></div>
+      </div>
+
+      <div class="resume-block">
+        <h3 data-i18n="resume.talks">Talks</h3>
+        <div class="resume-item"><span class="year">2025</span><b>Ernst & Young Japan</b><em>February 2025</em></div>
+        <div class="resume-item"><span class="year">2024</span><b>Ernst & Young Japan (Art Club)</b><em>March 2024 — 140 people</em></div>
+      </div>
+
+      <div class="resume-block">
+        <h3 data-i18n="resume.tv">TV Commercials</h3>
+        <div class="resume-item"><span class="year">2024</span><b>Groupe INICEA</b><em>for Stéphane Goddard — 1.3M views</em></div>
+      </div>
+
+      <div class="resume-block">
+        <h3 data-i18n="resume.books">Books</h3>
+        <div class="resume-item"><span class="year">2024</span><b>ARTSEEN — Spring 2024</b><em>UK — Featured in artist selection</em></div>
+      </div>
+
+      <div class="resume-block resume-block-wide">
+        <h3 data-i18n="resume.awards">Awards & Recognition</h3>
+        <div class="resume-item"><span class="year">2017</span><b>Prix Stratégies du Marketing Digital — BRONZE</b><em>Films éditoriaux · Stratégies</em></div>
+        <div class="resume-item"><span class="year">2014</span><b>TOP 50 Most Investable Startup in Europe</b><em>Dublin BIC & European Investor Gate</em></div>
+        <div class="resume-item"><span class="year">2014</span><b>2nd Place — Outstanding Innovation & Entrepreneurship</b><em>Innovation Weekend · Sunbridge Global Venture</em></div>
+        <div class="resume-item"><span class="year">2014</span><b>Digital Innovation 2014 — GOLD (Social Network)</b><em>World Association of Advertisers</em></div>
+        <div class="resume-item"><span class="year">2014</span><b>Finalist — Les AppAwards 2014</b><em>Les App Awards</em></div>
+        <div class="resume-item"><span class="year">2014</span><b>TOP 100 Startups</b><em>Challenge Magazine (France)</em></div>
+        <div class="resume-item"><span class="year">2014</span><b>TOP 100 EBG Disrupt</b><em>EBG</em></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ SERVICES ═══════ -->
+<section id="services" class="section section-services">
+  <div class="container">
+    <header class="section-head">
+      <span class="section-kicker" data-i18n="services.kicker">Services</span>
+      <h2 class="section-title" data-i18n="services.title">What I Create</h2>
+      <p class="section-lead" data-i18n="services.lead">Transforming visions into visual realities through cutting-edge creativity and technical excellence.</p>
+    </header>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 3 2.5 15 0 18M12 3c-2.5 3-2.5 15 0 18"/></svg>
+        </div>
+        <h3 data-i18n="services.s1Title">Digital Art Creation</h3>
+        <p data-i18n="services.s1Desc">Cutting-edge digital artwork that pushes creative boundaries and explores new visual territories.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 8h20M7 5v14M17 5v14"/></svg>
+        </div>
+        <h3 data-i18n="services.s2Title">TV Commercials</h3>
+        <p data-i18n="services.s2Desc">Compelling commercial content that connects brands with audiences through powerful storytelling.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <h3 data-i18n="services.s3Title">Short Films</h3>
+        <p data-i18n="services.s3Desc">Cinematic narratives that blend artistic vision with technical excellence.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3 data-i18n="services.s4Title">Brand Identity</h3>
+        <p data-i18n="services.s4Desc">Comprehensive visual systems that define and elevate brand presence.</p>
+      </article>
+    </div>
+
+    <div class="services-fiverr">
+      <a href="https://www.fiverr.com/b23design" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-3px;margin-right:8px"><path d="M23.004 15.588h-2.538v8.412h-6.348v-8.412h-4.596v8.412H3.174v-8.412H.636v-4.596h2.538v-1.542c0-3.768 2.454-6.144 6.246-6.144h4.74v4.596H10.11c-.864 0-1.338.456-1.338 1.344v1.746h4.596V9.45c0-3.768 2.454-6.144 6.246-6.144h3.39v4.596h-2.61c-.864 0-1.338.456-1.338 1.344v1.746h3.948v4.596zM6.63 2.4a2.4 2.4 0 110-4.8 2.4 2.4 0 010 4.8z"/></svg>
+        <span data-i18n="services.fiverr">Book my services on Fiverr</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTACT ═══════ -->
+<section id="contact" class="section section-contact">
+  <div class="container contact-grid">
+
+    <div class="contact-intro">
+      <span class="section-kicker" data-i18n="contact.kicker">Get in Touch</span>
+      <h2 class="section-title" data-i18n="contact.title">Let's Talk</h2>
+      <p class="section-lead" data-i18n="contact.lead">Have a project in mind? Organizing an exhibition? I'm always excited to collaborate on innovative creative ventures.</p>
+
+      <ul class="contact-info">
+        <li>
+          <span class="contact-label" data-i18n="contact.email">Email</span>
+          <a href="mailto:thierry@b23.design">thierry@b23.design</a>
+        </li>
+        <li>
+          <span class="contact-label" data-i18n="contact.based">Based in</span>
+          <span>Paris · Tokyo</span>
+        </li>
+      </ul>
+
+      <div class="social-links">
+        <a href="https://www.instagram.com/thierrybezier/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+        </a>
+        <a href="https://x.com/thierrybezier" target="_blank" rel="noopener" aria-label="X / Twitter">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/bezier/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.852 3.37-1.852 3.601 0 4.267 2.37 4.267 5.455v6.288zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.fiverr.com/b23design" target="_blank" rel="noopener" aria-label="Fiverr">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.004 15.588h-2.538v8.412h-6.348v-8.412h-4.596v8.412H3.174v-8.412H.636v-4.596h2.538v-1.542c0-3.768 2.454-6.144 6.246-6.144h4.74v4.596H10.11c-.864 0-1.338.456-1.338 1.344v1.746h4.596V9.45c0-3.768 2.454-6.144 6.246-6.144h3.39v4.596h-2.61c-.864 0-1.338.456-1.338 1.344v1.746h3.948v4.596zM6.63 2.4a2.4 2.4 0 110-4.8 2.4 2.4 0 010 4.8z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" method="POST" action="contact.php" novalidate>
+      <div class="field">
+        <label for="name" data-i18n="form.name">Name</label>
+        <input id="name" name="name" type="text" required maxlength="100" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="email" data-i18n="form.email">Email</label>
+        <input id="email" name="email" type="email" required maxlength="150" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="subject" data-i18n="form.subject">Subject</label>
+        <input id="subject" name="subject" type="text" maxlength="200">
+      </div>
+      <div class="field">
+        <label for="message" data-i18n="form.message">Message</label>
+        <textarea id="message" name="message" rows="5" required maxlength="3000"></textarea>
+      </div>
+      <!-- Honeypot -->
+      <input type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+
+      <button type="submit" class="btn btn-primary btn-submit">
+        <span data-i18n="form.send">Send Message</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m0 0l-7-7m7 7l-7 7"/></svg>
+      </button>
+      <div class="form-status" id="formStatus" aria-live="polite"></div>
+    </form>
+
+  </div>
+</section>
+
+<!-- ═══════ FOOTER ═══════ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">THIERRY BÉZIER</div>
+      <p class="footer-tag" data-i18n="footer.tag">Digital Artist & Creative Director — Paris · Tokyo</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#resume" data-i18n="nav.resume">Resume</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="footer-meta">
+      <p>© <span id="year"></span> Thierry Bézier. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <p><a href="mailto:thierry@b23.design">thierry@b23.design</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5m0 0l-7 7m7-7l7 7"/></svg>
+</a>
+
+<!-- ═══════ Lightbox modal ═══════ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image gallery">
+  <button class="lb-close" id="lbClose" type="button" aria-label="Close gallery">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lb-prev" id="lbPrev" type="button" aria-label="Previous image">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button class="lb-next" id="lbNext" type="button" aria-label="Next image">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+  <div class="lb-stage" id="lbStage">
+    <img class="lb-img" id="lbImg" alt="">
+  </div>
+  <div class="lb-caption" id="lbCaption">
+    <h3 class="lb-title" id="lbTitle"></h3>
+    <p class="lb-meta" id="lbMeta"></p>
+    <div class="lb-counter" id="lbCounter"></div>
+  </div>
+</div>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

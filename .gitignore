@@ -1,0 +1,16 @@
+# Scripts d'optimisation (outils locaux uniquement)
+_scripts/
+
+# Archives
+*.zip
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Notes de déploiement
+DEPLOY.md
