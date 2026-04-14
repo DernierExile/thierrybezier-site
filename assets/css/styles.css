@@ -136,16 +136,6 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 }
 
 .brand { display: flex; align-items: center; gap: 14px; }
-.brand-mark {
-  width: 44px; height: 44px;
-  display: inline-flex; align-items: center; justify-content: center;
-  border: 1px solid var(--line-2);
-  border-radius: 50%;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 0.05em;
-  background: linear-gradient(135deg, rgba(255,107,107,0.15), rgba(255,176,140,0.05));
-}
 .brand-name {
   font-size: 13px;
   font-weight: 500;

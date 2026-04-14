@@ -9,6 +9,13 @@
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
 
+  /* WebP support detection */
+  const supportsWebP = (() => {
+    const c = document.createElement('canvas');
+    return c.toDataURL('image/webp').startsWith('data:image/webp');
+  })();
+  function imgSrc(path) { return supportsWebP ? path.replace(/\.jpg$/, '.webp') : path; }
+
   const WORKS = window.WORKS_DATA || [];
   const I18N = window.I18N || {};
   const SUPPORTED = ['en', 'fr', 'jp'];
@@ -79,7 +86,7 @@
     picks.forEach((f, i) => {
       const slide = document.createElement('div');
       slide.className = 'hero-slide' + (i === 0 ? ' active' : '');
-      slide.style.backgroundImage = `url('assets/img/works/${f}')`;
+      slide.style.backgroundImage = `url('${imgSrc('assets/img/works/' + f)}')`;
       slider.appendChild(slide);
 
       const dot = document.createElement('button');
@@ -128,7 +135,7 @@
       const playOverlay = hasVideo ? `<div class="work-card-play" aria-hidden="true"><svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></div>` : '';
       return `
         <article class="work-card ${show ? '' : 'hidden'} ${hasVideo ? 'has-video' : ''}" data-cat="${w.cat}" data-idx="${i}" tabindex="0" role="button" aria-label="${escapeHtml(ariaLabel)}">
-          <img src="assets/img/works/${w.img}" alt="${escapeHtml(title)}" loading="lazy">
+          <img src="${imgSrc('assets/img/works/' + w.img)}" alt="${escapeHtml(title)}" loading="lazy">
           ${playOverlay}
           ${badge}
           <div class="work-card-info">
@@ -190,12 +197,12 @@
     if (!w) return;
     // Restore image stage if previously replaced by iframe
     if (!lbStage.querySelector('#lbImg')) {
-      lbStage.innerHTML = '<img class="lb-img" id="lbImg" alt="">';
+      lbStage.innerHTML = `<img class="lb-img" id="lbImg" alt="${escapeHtml(w.title[currentLang] || w.title.en)}">`;
     }
     const imgEl = lbStage.querySelector('#lbImg');
     const file = lbState.images[lbState.imgIdx];
     const src = w.slug ? `assets/img/works/${w.slug}/${file}` : `assets/img/works/${file}`;
-    imgEl.src = src;
+    imgEl.src = imgSrc(src);
     imgEl.alt = w.title[currentLang] || w.title.en;
     lbTitle.textContent = w.title[currentLang] || w.title.en;
     lbMeta.textContent = `${w.year} · ${w.catLabel}`;
@@ -210,7 +217,7 @@
     lb.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
     // Reset stage (kills any playing iframe)
-    lbStage.innerHTML = '<img class="lb-img" id="lbImg" alt="">';
+    lbStage.innerHTML = '<img class="lb-img" id="lbImg" alt="Gallery image">';
     lbState.isVideo = false;
   }
 
@@ -276,7 +283,10 @@
       a.classList.toggle('active', a.getAttribute('href') === `#${cur}`);
     });
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
+  let scrollTick = false;
+  window.addEventListener('scroll', () => {
+    if (!scrollTick) { scrollTick = true; requestAnimationFrame(() => { onScroll(); scrollTick = false; }); }
+  }, { passive: true });
 
   /* ═══════ Burger / mobile nav ═══════ */
   const burger = $('#burger');
